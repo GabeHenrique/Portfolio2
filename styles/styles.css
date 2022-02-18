@@ -1,0 +1,349 @@
+html {
+    font-family: 'Heebo', sans-serif;
+}
+
+:root{
+    --primary-color: #FF6464;
+    --font-family: 'Heebo', sans-serif;
+}
+/*================= componentes ======================*/
+
+.title {
+    font-size: 27px;
+    line-height: 39px;
+    font-weight: bold;
+}
+.boldTitle {
+    font-size: 44px;
+    font-weight: 700;
+    line-height: 60px;
+}
+.paragraph {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.button {
+    width: 208px;
+    height: 47px;
+    background-color: var(--primary-color);
+    border-radius: 2px;
+    border-color: transparent;
+    font-family: var(--font-family);
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.button:hover {
+    opacity: 0.8;
+}
+
+/*==================================*/
+.headerBar {
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 60px;
+    gap: 33px;
+}
+
+.headerBar a:link {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: 500;
+    transition: 0.3s;
+
+}
+
+.headerBar a:visited {
+    color: black;
+}
+.headerBar a:hover {
+    color: var(--primary-color)
+}
+
+
+
+
+.homeContainer {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 40px;
+}
+
+.homeContainer div {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 20px;
+}
+
+.homeContainer div p {
+    padding-right: 100px;
+    margin-bottom: 10px;
+}
+
+.profile-image{
+    width:243px;
+    height:243px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-top: 32px;
+}
+
+.recentPosts {
+    display: flex;
+    flex-direction: column;
+    width:100%;
+    padding-bottom: 30px;
+    background-color: #EDF7FA;
+}
+
+.headerPosts {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 215px;
+    margin-right: 215px;
+
+}
+
+.headerPosts p {
+    font-size:22px;
+    line-height:80px;
+    font-weight: 400;
+}
+
+.headerPosts a {
+    font-size: 16px;
+    line-height: 80px;
+    color: #00a8cc;
+}
+
+.headerPosts a:link {
+    text-decoration: none;
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content:center;
+    gap: 40px;
+}
+
+.card {
+    width: 438px;
+    height: 295px;
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(187, 225, 250, 0.25);
+    border-radius: 4px;
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+    box-sizing: border-box;
+}
+
+.card .title {
+    transition: 0.2s;
+}
+
+.card .title:hover {
+    color: #FF6464;
+}
+
+
+.dateLine {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.recentWorks {
+    box-sizing: border-box;
+    margin-left: 18%;
+    margin-right: 18%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 100px;
+}
+
+.subtitle {
+    font-size:22px;
+    padding: 25px 0;
+    font-weight: 400;
+}
+
+.rectangleImg {
+    display: flex;
+    flex-direction: row;
+    width: 246px;
+    height:180px;
+}
+
+.work {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    cursor: pointer;
+}
+
+.work .title {
+    transition: 0.2s;
+    display: inline-block;
+}
+
+.work .title:hover {
+    color: #FF6464;
+}
+
+.work div div {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    font-size: 16px;
+    align-items: center;
+    gap: 50px;
+}
+
+.work div div p {
+    font-size: 20px;
+    line-height: 30px;
+    color: #8695A4;
+
+}
+
+.yearButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 62px;
+    padding-top: 0;
+
+    background-color: #142850;
+    color: white !important;
+
+    font-weight: 900;
+    border-radius: 16px;
+}
+
+.title .dateLine {
+    height: 45px;
+}
+
+.work .paragraph {
+    margin-top: 20px;
+}
+
+.divisor {
+    margin: 30px 0;
+    height: 0;
+    border: 1px solid #E0E0E0;
+}
+
+.footer {
+    height: 182px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.iconLink {
+    display: flex;
+    flex-direction: row;
+    gap: 35px;
+    margin-bottom: 15px;
+}
+
+.iconLink img {
+    cursor: pointer;
+}
+
+.footer p {
+    font-size: 22px !important;
+    font-weight: 500 !important;
+}
+
+@media (max-width: 800px) {
+    .headerPosts {
+        margin: 0;
+        justify-content: space-evenly;
+    }
+
+    .recentWorks {
+        align-items: center;
+        margin-left: 10vw;
+        margin-right: 10vw;
+    }
+
+    .cards {
+        flex-direction: column;
+        margin-bottom: 30px;
+        gap: 40px;
+    }
+}
+@media (max-width: 650px) {
+    .homeContainer {
+        flex-direction: column;
+    }
+    .boldTitle {
+        font-size: 30px;
+    }
+    .homeContainer div {
+        align-items: center;
+        width: 80vw;
+        text-align: center;
+        order: 1;
+    }
+    .homeContainer  div p {
+        padding: 0 30px;
+        /*text-align: center;*/
+    }
+    .homeContainer .profile-image {
+        order: 0
+    }
+
+    .work {
+        flex-direction: column;
+        align-items: center;
+    }
+    .work .rectangleImg {
+        order: 1;
+    }
+    .work div {
+        order: 2;
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+@media (max-width: 470px) {
+    .card {
+        width:80vw;
+        height: auto;
+        align-items: center;
+        text-align: center;
+    }
+    .card .title {
+        font-size: 25px;
+    }
+}
+
+
+
+
+/*white-space: nowrap;*/
+/*overflow: hidden;*/
+/*text-overflow: ellipsis;*/
