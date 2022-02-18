@@ -295,6 +295,10 @@ html {
     }
 }
 @media (max-width: 650px) {
+    .headerBar{
+        justify-content: space-evenly;
+        padding: 0;
+    }
     .homeContainer {
         flex-direction: column;
     }
